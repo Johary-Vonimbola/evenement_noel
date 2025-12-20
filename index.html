@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
 <body>
     <header>
         <nav>
-            <a href="#"><img src="./assets/logo.png" ></a>
+            <a href="#"><img src="./assets/logo.png" alt="Logo"></a>
             <ul>
                 <li><a href="#acceuil">Acceuil</a></li>
                 <li><a href="#apropos">A propos</a></li>
@@ -17,19 +17,150 @@
             </ul>
         </nav>
     </header>
-    <aside></aside>
+    <aside>
+        <section id="conseils">
+            <h2>Conseils pour profiter de l'événement</h2>
+            <ul>
+                <li>Portez des vêtements chauds pour rester confortable.</li>
+                <li>Arrivez tôt pour profiter de toutes les activités.</li>
+                <li>N’oubliez pas votre appareil photo pour les souvenirs.</li>
+                <li>Respectez les consignes de sécurité autour des manèges et feux d’artifice.</li>
+                <li>Si vous venez en voiture, prévoyez du temps pour le stationnement.</li>
+                <li>Hydratez-vous et prenez des collations si nécessaire.</li>
+                <li>Et surtout, amusez-vous et profitez de la magie de Noël !</li>
+            </ul>
+        </section>
+        <section id="planning">
+            <h2>Planning des événements</h2>
+            <table border="1">
+                <thead>
+                    <th>Événement</th>
+                    <th>Heure</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ouverture du parc d’amusement</td>
+                        <td><time datetime="2025-12-25T14:00">14h00</time></td>
+                    </tr>
+                    <tr>
+                        <td>Feux d’artifice</td>
+                        <td><time datetime="2025-12-25T17:00">17h00</time></td>
+                    </tr>
+                    <tr>
+                        <td>Buffet de Noël</td>
+                        <td><time datetime="2025-12-25T18:00">18h00</time></td>
+                    </tr>
+                    <tr>
+                        <td>Rencontre avec le Père Noël</td>
+                        <td><time datetime="2025-12-25T19:00">19h00</time></td>
+                    </tr>
+                    <tr>
+                        <td>Clôture de l’événement</td>
+                        <td><time datetime="2025-12-25T20:00">20h00</time></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </aside>
     <main>
         <section id="acceuil">
-            
+            <h2>Acceuil</h2>
+            <article>
+                <h3>Grand Événement de Noël</h3>
+                <p>Venez célébrer Noël avec nous dans une ambiance magique, une evenement chaleureuse a passer en famille avec des activites amusantes.</p>
+                <!-- Les balises <time> nous permet d'indiquer au navigateur les informations temporelles -->
+                <p>Notre rendez-vous ce <time datetime="2025-12-25">Jeudi, 25 decembre 2025</time> de <time datetime="2025-12-25T14:00">14h</time> à <time datetime="2025-12-25T20:00">20h</time>.</p>
+                <!-- Les balises <address> sont utilises pour indiquer des addresses mais aussi les lieux -->
+                <address>Antaninarenina Garden, Antananarivo</address>
+                <!-- iframe utilise pour afficher le lieu en utilisant google maps -->
+                <iframe 
+                    width="600"
+                    height="400"
+                    src="https://www.google.com/maps/place/Antaninarenina+Garden/@-18.9096716,47.5227868,17z/data=!3m1!4b1!4m6!3m5!1s0x21f07f0059c9f57d:0x6e456ab6ceb11247!8m2!3d-18.9096767!4d47.5253617!16s%2Fg%2F11ylqjkgcz?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </article>
         </section>
         <section id="apropos">
-            
+            <h2>A propos</h2>
+            <p>Découvrez ce que nous avons préparé pour vous</p>
+            <article>
+                <h3>Centre d’amusement</h3>
+                <p>Un espace spécialement préparé pour les enfants et les familles. <br>Jeux, manèges et animations pour passer un moment joyeux et plein de rires.</p>
+                <img width="600" height="400" src="./assets/centre_amusement.jpg" alt="Image centre d;amusement" >
+                <br>
+                <i>Et bien d’autres jeux vous attendent sur place...</i>
+            </article>
+            <article>
+                <h3>Emerveillement</h3>
+                <p>Un grand spectacle lumineux pour célébrer Noël tous ensemble. <br>Un moment magique à partager en famille et entre amis.</p>
+                <img width="600" height="400" src="./assets/feux_artifice.jpg" alt="Feux d'artifice">
+                <br>
+                <i>Le spectacle réserve encore quelques surpris...</i>
+            </article>
+            <article>
+                <h3>Buffet de Noël</h3>
+                <p>Un buffet varié pour petits et grands. <br>Plats chauds, desserts de Noël et boissons pour se régaler ensemble.</p>
+                <img width="600" height="400" src="./assets/buffet_noel.jpg" alt="Buffet de noel">
+                <br>
+                <i>D’autres saveurs vous attendent le jour de l’événement...</i>
+            </article>
+            <article>
+                <h3>Rencontre avec le Père Noël</h3>
+                <p>Le Père Noël sera présent pour rencontrer les enfants. <br>Photos, sourires et moments inoubliables au programme.</p>
+                <img width="600" height="400" src="./assets/pere_noel.jpg" alt="Pere noel">
+                <br>
+                <i>Et bien d’autres jeux vous attendent sur place...</i>
+            </article>
+            <p>
+                <strong>Et ce n’est pas tout !</strong>
+                <br>
+                D’autres animations et surprises vous attendent le jour de l’événement.
+            </p>
         </section>
         <section id="contact">
-            
+            <h2>Contact</h2>
+            <!-- fieldset utiliser pour avoir un rendu assez visuel avec un legende -->
+            <fieldset>
+                <legend>Téléphone</legend>
+                <address>+261 34 12 345 67</address>
+                <p>Disponible de <time datetime="08:00">8h</time> à <time datetime="18:00">18h</time></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Email</legend>
+                <address>contact@noel-event.com</address>
+                <p>Nous répondons sous 24 heures</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Lieu</legend>
+                <address>Antaninarenina Garden, Antananarivo</address>
+                <p>Notre équipe sera présente sur place le jour de l’événement</p>
+            </fieldset>
         </section>
         <section id="inscription">
-            
+            <h2>S'inscrire</h2>
+            <form method="post" action="#">
+                <div>
+                    <label for="phone">Numero téléphone</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        pattern="\+261\s\d{2}\s\d{2}\s\d{3}\s\d{2}"
+                        placeholder="+261 34 00 000 00"
+                        required
+                    >
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="youremail@example.com" required>
+                </div>
+                <div>
+                    <label for="nb_personne">Nombre de personne</label>
+                    <input id="nb_personne" type="number" required>
+                </div>
+                <button type="submit">S'inscrire</button>
+            </form>
         </section>
     </main>
     <footer></footer>
