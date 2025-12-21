@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navigation principale">
             <a href="#"><img src="./assets/logo.png" alt="Logo"></a>
             <ul>
                 <li><a href="#acceuil">Acceuil</a></li>
@@ -17,7 +17,7 @@
             </ul>
         </nav>
     </header>
-    <aside>
+    <aside aria-label="Informations complementaires">
         <section id="conseils">
             <h2>Conseils pour profiter de l'événement</h2>
             <ul>
@@ -32,7 +32,7 @@
         </section>
         <section id="planning">
             <h2>Planning des événements</h2>
-            <table style="border: solid 1px #000;">
+            <table>
                 <thead>
                     <tr>
                         <th>Événement</th>
@@ -164,3 +164,9 @@
     <footer></footer>
 </body>
 </html>
+<style type="text/css">
+    table, td, th{
+        border: solid 1px #000;
+        border-collapse: collapse;
+    }
+</style>
