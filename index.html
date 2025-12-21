@@ -154,9 +154,11 @@
             <form method="post" action="#">
                 <div>
                     <label for="phone">Numero téléphone</label>
+                    <!-- Le dataset country peut-etre exploiter en javascript en ajoutant des verifications supplementaires sur la validite du numero Malagasy -->
                     <input
                         type="tel"
                         id="phone"
+                        data-country="MG"
                         pattern="\+261\s\d{2}\s\d{2}\s\d{3}\s\d{2}"
                         placeholder="+261 34 00 000 00"
                         required
