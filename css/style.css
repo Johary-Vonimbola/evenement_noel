@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html{ 
+    font-size: 16px; 
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                         "aside main main"
+                         "aside footer footer";
+    overflow: hidden;
+    height: 100vh;
+}
+header{
+    grid-area: header;
+    background-color: rgb(224, 228, 224);
+}
+header > nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+header > nav > a > img{
+    width: 6rem;
+    aspect-ratio: 1;
+    margin-left: 1rem;
+}
+header > nav > ul{
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+aside{
+    grid-area: aside;
+    background-color: aliceblue;
+}
+section > h2{
+    padding: 2rem;
+}
+#conseils > ul{
+    padding: 0 3rem;
+}
+table, td, th{
+    border-collapse: collapse;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    border: groove 1px;
+}
+th{
+    background-color: rgb(224, 228, 224);
+}
+#conseils > ul > li{
+    padding: 0.5rem;
+}
+main{
+    grid-area: main;
+    overflow: scroll;
+}
+article > *, section > *{
+    padding: 0.5rem;
+}
+article > img, article > iframe, article > video{
+    width: 80%;
+    height: 40%;
+}
+footer{
+    grid-area: footer;
+}
