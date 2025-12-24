@@ -7,6 +7,7 @@ html{
 }
 body{
     line-height: 1.6;
+    /* Grid est plus adapte ici car c'est plus facile d'organiser les contenus avec un control total sans avoir a ecrire beaucoup de ligne de code */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header"
@@ -73,7 +74,7 @@ th{
     color: rgb(0, 0, 0);
 }
 th, td{
-    border: groove 1px;
+    border: solid 1px gray;
     padding: 0.2rem;
     width: 100%;
 }
