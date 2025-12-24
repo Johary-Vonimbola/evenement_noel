@@ -1,80 +1,111 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-html{ 
-    font-size: 16px; 
+html{
+    font-size: 16px;
 }
 body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header"
                          "aside main main"
                          "aside footer footer";
-    overflow: hidden;
     height: 100vh;
+    overflow: hidden;
+    gap: 1rem;
 }
 header{
     grid-area: header;
-    background-color: rgb(224, 228, 224);
+    border-radius: 0.2rem;
+    background-color: #a7c957;
 }
 header > nav{
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 header > nav > a > img{
-    width: 6rem;
+    width: 5rem;
     aspect-ratio: 1;
-    margin-left: 1rem;
 }
 header > nav > ul{
     list-style-type: none;
     display: flex;
-    gap: 3rem;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.2rem;
+    gap: 2rem;
+    margin-right: 2rem;
 }
-a{
+header > nav > ul > li > a{
     text-decoration: none;
     color: #000;
 }
+header > nav > ul > li > a:hover{
+    text-decoration: underline;
+}
 aside{
     grid-area: aside;
-    background-color: aliceblue;
 }
-section > h2{
-    padding: 2rem;
-}
-#conseils > ul{
-    padding: 0 3rem;
-}
-table, td, th{
-    border-collapse: collapse;
-    padding: 1rem;
-    width: 90%;
-    margin: auto;
-    border: groove 1px;
-}
-th{
-    background-color: rgb(224, 228, 224);
-}
-#conseils > ul > li{
-    padding: 0.5rem;
+aside > section > ul > li{
+    line-height: 1.8rem;
 }
 main{
     grid-area: main;
     overflow: scroll;
 }
-article > *, section > *{
-    padding: 0.5rem;
+main > section{
+    margin-block: 1rem;
 }
-article > img, article > iframe, article > video{
+main > section > article > img, iframe, video{
     width: 80%;
-    height: 40%;
+    border-radius: 0.2rem;
 }
 footer{
     grid-area: footer;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    background-color: #bc4749;
+    color: #fff;
+}
+th, td{
+    border: groove 1px;
+    width: 100%;
+}
+fieldset{
+    border: solid 1px #a7c957;
+}
+form{
+    width: 500px;
+}
+form > div{
+    margin-block: 1rem;
+}
+form > div > label{
+    font-weight: bold;
+    display: block;
+}
+form > div > input{
+    width: 100%;
+    padding: 0.5rem;
+    text-indent: 0.5rem;
+    font-size: 1.2rem;
+}
+form > div > input:focus{
+    outline-color: #bc4749;
+}
+form > button{
+    padding: 1rem 2rem;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #bc4749;
+}
+form > button:hover{
+    background-color: #bc4749;
 }
